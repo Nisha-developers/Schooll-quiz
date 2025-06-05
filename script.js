@@ -40,6 +40,7 @@ const EnglishEl = document.getElementById('English');
  buttonEl.addEventListener('click', ()=>{    //Adding the addEvent listener to the clicked button
   let result2 =  localStorage.getItem('studentsData');  // Retrieve data from the storage
    objectParsed =  JSON.parse(result2);
+    console.log(objectParsed)
 //    Terget The input data
       let firstNameElValue = firstNameEl.value;
        let lastNameValue = lastNameEl.value;
