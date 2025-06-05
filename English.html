@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Quiz Examination</title>
+  <link rel="stylesheet" href="Physics.css">
+</head>
+<body>
+    <header>
+        <h1>English Quiz Examination</h1>
+        <div class="introduction">Welcome John Smith id-number: SCH001</div>
+        <div class="timer" id="timer">02:00:00</div>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <div class="progress-info">
+                <strong>Question <span id="current-q">1</span> of 10</strong>
+            </div>
+            <div class="question-grid" id="question-grid"></div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #000;"></div>
+                    <span>Not attempted</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #ff4757;"></div>
+                    <span>Visited</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-box" style="background: #2ed573;"></div>
+                    <span>Answered</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <div id="quiz-content">
+                <!-- Questions will be dynamically inserted here -->
+            </div>
+
+            <div class="results" id="results">
+                <h2>Quiz Completed!</h2>
+                <div class="score" id="final-score"></div>
+                <p>Your score has been saved automatically.</p>
+            </div>
+
+            <div class="navigation" id="navigation">
+                <button class="nav-btn" id="prev-btn" onclick="previousQuestion()">← Previous</button>
+                <button class="nav-btn submit-btn" id="submit-btn" onclick="submitQuiz()" style="display: none;">Submit Quiz</button>
+                <button class="nav-btn" id="next-btn" onclick="nextQuestion()">Next →</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>El-Bethel Networking World solutions</footer>
+
+    <script src="English.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+ margin-top: 2rem;
+ background-color: #000000;
+ color: beige;
+ font-size: 1.5rem;
+ position: fixed;
+ bottom: 0;
+text-align: center;
+ width: 100%;
+ font-style: italic;
+}
+button.top-teacherstudent-details{
+    margin: 0;
+ position: absolute;
+ right: 20px;
+ top: 30px;
+}
+
+button.top-teacherstudent-details a{
+    color: white;
+    text-decoration: none;
+}
+button.top-teacherstudent-details a:hover{
+    color: black;
+}
+
+h1{
+   font-size: 2.5rem;
+ text-align: center;
+ margin-top: 20px;
+}
+body{
+    background-color: beige;
+}
+main{
+    padding: 3rem;
+    box-shadow: 2px 2px 6px black;
+    width: 70%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-inline: auto;
+    background-color: white;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+form{
+    margin-top: 2rem;
+}
+form input, select{
+    width: 100%;
+    margin-block: 10px;
+    height: 25px;
+}
+form input:focus{
+    outline: none;
+}
+button{
+    margin-top: 1.5rem;
+    height: 30px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 2rem;
+    transition:  all 0.5s ease-in;
+    cursor: pointer;
+}
+p{
+   font-size: 1.2rem;
+   font-style: italic;
+   padding-block: 1.4rem;
+}
+button:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+.message{
+    padding-block: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+.message1{
+    color: red;
+}
+.message2{
+    color: rgb(122, 16, 16);
+}
+.message3{
+    color: green;
+}
+@media (max-width: 743px) {
+    main{
+        width: 90%;
+        margin-top: 1rem;
+          margin-bottom: 2rem;
+        
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    footer{
+        font-size: 10px;
+    }
+    button.top-teacherstudent-details{
+    margin: 0;
+ position: static;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ order: 2;
+}
+}
